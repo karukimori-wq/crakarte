@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import AppNav from "@/components/AppNav";
 
 export const metadata: Metadata = {
   title: "Crakarte | クリエイターの仕事を、ひとつのカルテに。",
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="ja">
-      <body>{children}</body>
+      <body><AppNav />{children}</body>
     </html>
   );
 }
