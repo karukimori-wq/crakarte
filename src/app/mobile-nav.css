@@ -39,20 +39,31 @@
     font-size:18px;
     line-height:1;
   }
-  .mobile-nav a.active{
-    background:transparent;
-    color:var(--accent);
-  }
-  .mobile-nav a.active span{
-    width:34px;
-    border-radius:10px;
-    background:#edf4ff;
-    color:var(--accent);
-  }
+  .mobile-nav a.active{background:transparent;color:var(--accent)}
+  .mobile-nav a.active span{width:34px;border-radius:10px;background:#edf4ff;color:var(--accent)}
   .mobile-nav a:active{transform:scale(.94)}
   .content,.standalone{padding-bottom:112px}
   .client-page{padding-bottom:108px}
+  .tasks-page .page-head{position:relative;padding-right:52px}
+  .tasks-page .page-head h1{font-size:28px}
+  .tasks-page .page-head p:last-child{margin:8px 0 0;max-width:290px}
+  .tasks-page .task-add{position:absolute;right:0;top:4px;width:42px;height:42px;padding:0;display:grid;place-items:center;border-radius:13px;font-size:20px}
+  .tasks-page .task-add b{display:none}
+  .tasks-page .task-summary{gap:8px;margin-top:6px}
+  .tasks-page .task-summary>div{min-height:76px;padding:13px 14px}
+  .tasks-page .task-summary strong{font-size:21px}
+  .tasks-page .task-summary .alert strong{color:#b44739}
+  .tasks-page .task-group{margin-top:30px}
+  .tasks-page .task-panel{padding:3px 16px}
+  .tasks-page .task{padding:17px 0;align-items:flex-start}
+  .tasks-page .check{margin-top:2px}
+  .tasks-page .task .grow strong{font-size:14px}
+  .tasks-page .task .grow span{font-size:11px;margin-top:5px}
+  .tasks-page .task-meta{display:flex;flex-direction:column;align-items:flex-end;gap:7px;flex:0 0 auto}
+  .tasks-page .task-due{font-size:10px;color:var(--muted)}
+  .tasks-page .priority{margin:0;min-width:34px;text-align:center}
 }
 @media (max-width:390px){
   .mobile-nav{left:12px;right:12px}
+  .tasks-page .task-summary>div{padding:12px}
 }
